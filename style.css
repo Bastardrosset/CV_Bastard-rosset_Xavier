@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+  }  
+  .red {
+    color: rgb(158, 0, 0);
+  } 
+  .blue {
+    color: blue;
+  } 
+  body {
+    font-family: "Libre Baskerville", serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bolder;
+  }  
+  .upper {
+    text-transform: uppercase;
+  }  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 2rem;
+  }  
+  .heading h2 {
+    margin-top: 1rem;
+  }
+    /********* NAV BAR ***********/
+  .navbar {
+    border-bottom: solid 0.1rem black;
+    background-color: #292e49d2;
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .nav-link:hover {
+    background-color: #bbd2c5cc;
+    color: #292e49 !important;
+    font-weight: bolder;
+    text-shadow: none;
+  }
+  
+  .navbar a {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    text-shadow: -0.2rem -0.2rem 0.5rem rgba(0, 0, 1, 0.479);
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+  }
+  
+  /******************* #header *******************/
+  #header {
+    padding: 5rem 0 9rem 0;
+    background-size: cover;
+    background-image: linear-gradient(220deg, #bbd2c5cc, #5369764f, #292e49e7),
+      url(/assets/chemin.jpg);
+    clip-path: polygon(0 0, 100% 0%, 100% 69%, 0 100%);
+  }
+  
+  .header_photo {
+    text-align: center;
+    opacity: 0.9;
+  }
+  
+  .rounded-circle {
+    width: 30rem;
+  }
+  
+  section .heading {
+    text-align: center;
+    padding: 4rem;
+  }
+  
+  .heading {
+    margin-bottom: 1rem;
+  }
+  
+  .heading h1 {
+    text-transform: uppercase;
+  }
+  
+  .heading h1,
+  .heading h3 {
+    color: #fff;
+    text-shadow: 0.4rem -0.2rem 0.5rem rgba(0, 0, 0, 0.637);
+  }
+  
+  .CV {
+    padding-left: 70%;
+    margin-bottom: 2rem;
+  }
+  
+  /************* COMPETENCES *************/
+  #gradient {
+    background-image: linear-gradient(340deg, #bbd2c5b6, #5369764f, #292e49be);
+    height: 30rem;
+    width: 100%;
+    padding-top: 3rem;
+  }
+  .progress {
+    margin: 1rem;
+  }
+  .progress-bar h5 {
+    color: #fff;
+    text-shadow: 0.5rem -0.3rem 0.5rem rgba(0, 0, 0, 0.609);
+    margin-top: 0.4rem;
+  }
+  /*************** ANIMATION-LINE ***************/
+  .line:before,
+  #line-2:before,
+  #line-3:before,
+  #line-4:before {
+    margin-top: 4rem;
+    margin-left: 25%;
+    background: #292e49e7;
+    height: 0.2rem;
+    width: 50%;
+  }
+  
+  .line::after,
+  #line-2::after,
+  #line-3::after,
+  #line-4::after {
+    content: " ";
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 25%;
+    background: #292e49e7;
+    height: 0.2rem;
+    width: 50%;
+  }
+  
+  .line::after {
+    transform: translateX(0) scaleX(0);
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: line;
+  }
+  
+  @keyframes line {
+    0% {
+      transform: scaleX(0);
+    }
+  
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  /************* EXPERIENCES **************/
+  #experience {
+    background: linear-gradient(340deg, #bbd2c5b2, #bbd2c5bb, #5369764f);
+  }
+  
+  #line-2::after {
+    transform: translateX(0) scaleX(0);
+    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: lineExp;
+  }
+  
+  @keyframes lineExp {
+    100% {
+      transform: translateX(0) scaleX(1);
+      /*transform-origin: to right;*/
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 3rem 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .timeline:before {
+    content: " ";
+    position: absolute;
+    width: 0.3rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 50%;
+    margin-left: -0.25rem;
+    background-color: #292e49be;
+  }
+  
+  .timeline > li {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .timeline > li:after {
+    clear: both;
+  }
+  
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  
+  .timeline li .timeline-badge {
+    position: relative;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    top: 6.5rem;
+    left: 50%;
+    margin-left: -2.5rem;
+    background-color: #5369764f;
+    color: white;
+    text-shadow: 0.4rem -0.2rem 0.5rem rgba(0, 0, 0, 0.637);
+    border-radius: 50%;
+  }
+  
+  .timeline-panel-container {
+    width: 50%;
+    float: left;
+  }
+  
+  .timeline-panel-container-inverted {
+    width: 50%;
+    float: right;
+  }
+  
+  .timeline-panel {
+    position: relative;
+    width: 90%;
+    float: right;
+    margin-right: 4rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #292e49be;
+    padding: 1rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 0.1rem 0.6rem #292e4986;
+  }
+  
+  .timeline-panel-container-inverted .timeline-panel {
+    float: left;
+    margin-left: 4rem;
+  }
+  
+  .timeline-panel::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 2.5rem;
+    right: -1.4rem;
+    border-top: 1.4rem solid transparent;
+    border-left: 1.4rem solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 1.4rem solid transparent;
+  }
+  
+  .timeline-panel-container-inverted .timeline-panel:after {
+    left: -1.4rem;
+    right: auto;
+    border-left-width: 0;
+    border-right-width: 1.4rem;
+  }
+  
+  .timeline-header h3 {
+    display: inline-block;
+    position: relative;
+    font-size: 1.3rem;
+  }
+  
+  .timeline-header h4 {
+    color: #292e49be;
+  }
+  
+  /*********** EDUCATION ************/
+  #gradient3 {
+    background: linear-gradient(360deg, #53697694, #bbd2c5bb, #bbd2c5b2);
+    padding: 1rem;
+  }
+  
+  .container-xl {
+    margin: 0;
+  }
+  
+  #line-3::after {
+    transform: translateX(0) scaleX(0);
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: lineEducation;
+  }
+  
+  @keyframes lineEducation {
+    0% {
+      transform: scaleX(0);
+    }
+  
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .education-block {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: #53697634;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #292e49be;
+  }
+  
+  .education-block h5 {
+    padding-top: 1rem;
+    color: #536976e7;
+  }
+  
+  .bi-award-fill {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  
+  .education-block h3 {
+    color: #292e49;
+    text-shadow: 0.2rem -0.1rem 0.3rem rgba(255, 255, 255, 0.637);
+  }
+  
+  .education-block h4 {
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+  }
+  
+  .education-block p {
+    font-style: italic;
+  }
+  
+  .line-education {
+    height: 0.1rem;
+    width: 20%;
+    background: #292e49be;
+    margin: 0.5rem auto;
+  }
+  
+  .photo,
+  .photo-left {
+    position: relative;
+    width: 12rem;
+    transition: 0.4s ease;
+    margin-left: 25%;
+    cursor: pointer;
+  }
+  
+  .photo:hover,
+  .photo-left:hover {
+    transform: translateX(10%) translateY(-40%) scale(3, 3);
+  }
+  
+  /*********** PORTFOLIO ************/
+  #gradient-4 {
+    background-image: linear-gradient(160deg, #5369764f, #292e49e7);
+    padding-top: 2rem;
+  }
+  
+  #line-4::after {
+    transform: translateX(0) scaleX(0);
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: lineportfolio;
+  }
+  
+  @keyframes lineportfolio {
+    0% {
+      transform: scaleX(0);
+    }
+  
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .imagePortfolio img {
+    width: 20rem;
+    height: 15rem;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  
+  .imagePortfolio img:hover {
+    filter: none;
+    -webkit-filter: none;
+  }
+  
+  /*********** CAROUSSEL ************/
+  .Recomandations {
+    color: #292e49;
+    padding-bottom: 5rem;
+  }
+  
+  .carousel-item {
+    text-align: center;
+    height: 15rem;
+  }
+  
+  .carousel-item h3 {
+    color: #536976e7;
+  }
+  
+  /************ FORMULAIRE ***********/
+  .divider {
+    width: 15rem;
+    height: 0.2rem;
+    background: #292e49;
+    margin: 0 auto 2rem;
+    margin-top: 2rem;
+  }
+  
+  .container {
+    padding-top: 2rem;
+  }
+  
+  #formulaire-de-contact {
+    text-transform: uppercase;
+    text-shadow: 0.1rem -0.2rem 0.3rem rgba(27, 27, 27, 0.486);
+    text-align: center;
+  }
+  
+  #contact-form {
+    font-size: 1.3rem;
+    background: #fff;
+    padding: 4rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form-control {
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+  
+  textarea[type="text"] {
+    resize: none;
+    height: 10rem;
+  }
+  
+  .comment {
+    font-style: italic;
+    font-size: 1.1rem;
+    height: 2.5rem;
+    color: rgba(137, 43, 226, 0.76);
+  }
+  
+  #contact-form input[type="submit"] {
+    margin: 4rem auto 0rem;
+    display: block;
+  }
+  
+  .button1 {
+    border: solid 0.1rem;
+    background: rgba(223, 163, 0, 0.986);
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in 0s;
+  }
+  
+  .button1:hover {
+    background: rgb(224, 127, 0);
+    border-color: lightgray;
+    color: #292e49;
+  }
+  
+  .thank-you {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.6rem;
+  }
+  
+  /********** FOOTER ***********/
+  footer {
+    background-color: #292e49e0;
+    padding: 2rem 0 4rem;
+    text-align: center;
+  }
+  
+  footer a {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  footer h5 {
+    color: #536976e7;
+  }
+  
+  footer h5 i {
+    font-size: 1.5rem;
+  }
+  
+  footer a .fas {
+    color: white;
+  }
+  /***************** RESPONSIVE ******************/
+  @media screen and (max-width: 450px) {
+    .CV {
+      padding-left: 60%;
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+    }
+    .timeline-header h3 {
+      font-size: 10px;
+    }
+    .timeline-header h4 {
+      font-size: 12px;
+    }
+    .timeline-header p {
+      font-size: 12px;
+    }
+    .timeline-body p {
+      font-size: 10px;
+    }
+    .education-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .border-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .photo,
+    .photo-left {
+      margin: 0;
+    }
+  }
+  
