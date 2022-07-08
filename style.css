@@ -92,6 +92,12 @@
     width: 100%;
     padding-bottom: 3rem;
   }
+  #gradient .container{
+    height: auto;
+  }
+  #gradient .container .row{
+    padding-bottom: 3rem;
+  }
   .progress {
     margin: 1rem;
   }
@@ -325,16 +331,32 @@
       transform: scaleX(1);
     }
   }
+  .imagePortfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .imagePortfolio img {
     width: 20rem;
     height: 15rem;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
   }
-  
+  .imagePortfolio a{
+    text-decoration: none;
+    color: black;
+  }
+  .imagePortfolio p{
+    width: 15rem;
+    text-align: center;
+    transform: translateY(-20px);
+  }
   .imagePortfolio img:hover {
     filter: none;
     -webkit-filter: none;
+  }
+  .imagePortfolio:hover > p{
+    font-weight: bolder;
   }
   
   /*********** CAROUSSEL RECOMMANDATIONS ************/
@@ -342,7 +364,14 @@
     color: #292e49;
     padding-bottom: 5rem;
   }
+  .slideNumber_2{
+    height: 20rem;
+    text-align: center;
+  }
   /************ FORMULAIRE ***********/
+  #contact {
+    background-color: #292e49b6;
+  }
   .divider {
     width: 15rem;
     height: 0.2rem;
@@ -369,7 +398,7 @@
     height: 3.5rem;
     font-size: 1.4rem;
   }
-  textarea[type="text"] {
+  #message {
     resize: none;
     height: 10rem;
   }
@@ -382,6 +411,11 @@
   #contact-form input[type="submit"] {
     margin: 4rem auto 0rem;
     display: block;
+  }
+  .col-md-6 input:focus,
+  .col-md-12 textarea:focus {
+    border: 1px solid rgba(0, 0, 0, 0.446);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.446);
   }
   .button1 {
     border: solid 0.1rem;
@@ -461,9 +495,9 @@
     height: auto;
   }
   /**** PORTFOLIO ****/
-    #gradient-4 .container .row .imagePortfolio img{
-      display: flex;
-      width: 20rem!important;
+  #gradient-4 .container .row .imagePortfolio img{
+    display: flex;
+    width: 20rem!important;
     height: 15rem;
     }
   }

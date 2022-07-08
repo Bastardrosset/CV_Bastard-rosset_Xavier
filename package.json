@@ -1,0 +1,19 @@
+{
+  "name": "cv-en-ligne",
+  "version": "1.0.0",
+  "description": "Bastard-rosset-xavier-CV-en-ligne",
+  "main": "index.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bastardrosset/CV_Bastard-rosset_Xavier.git"
+  },
+  "author": "Bastard-rosset",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bastardrosset/CV_Bastard-rosset_Xavier/issues"
+  },
+  "homepage": "https://github.com/Bastardrosset/CV_Bastard-rosset_Xavier#readme"
+}
