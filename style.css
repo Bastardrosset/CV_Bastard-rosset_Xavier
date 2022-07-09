@@ -350,8 +350,10 @@
   .imagePortfolio img {
     width: 20rem;
     height: 15rem;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+  }
+  .imagePortfolio:hover {
+    filter: grayscale(3);
+    -webkit-filter: grayscale(3);
   }
   .imagePortfolio a{
     text-decoration: none;
@@ -365,8 +367,9 @@
   .imagePortfolio img:hover {
     filter: none;
     -webkit-filter: none;
+    transition: .3s ease;
   }
-  .imagePortfolio:hover > p{
+  .imagePortfolio:hover > p {
     font-weight: bolder;
   }
   

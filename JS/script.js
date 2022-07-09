@@ -1,6 +1,18 @@
 function valueFisrtName(){
     const firstName = document.querySelector('.firstname').value;
 }
+function valueName(){
+    const name = document.querySelector('#name').value;
+}
+function valueEmail(){
+    const email = document.querySelector('#email').value;
+}
+function valuePhone(){
+    const phone = document.querySelector('#phone').value;
+}
+function valueMessage(){
+    const message = document.querySelector('#message').value;
+}
 
 function selectedSendForm(){
     const sendForm = document.querySelector('.button1');
@@ -19,6 +31,11 @@ function selectedSendForm(){
             message : localStorage.getItem('message')
         }
             // console.log('formulaire as ', form);
+
+        const toSend = {
+            form,
+        }
+        // console.log('toSend form as', form);
 
     })
 }
