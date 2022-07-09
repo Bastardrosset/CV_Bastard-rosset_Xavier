@@ -86,6 +86,10 @@
     padding-left: 70%;
     margin-bottom: 2rem;
   }
+  .CV a{
+    color: #000!important;
+    font-weight: 600;
+  }
   .CV #button-CV:hover{
     background-color: #292e49!important;
     transition: .3s ease!important;
@@ -488,6 +492,7 @@
     border: 0px;
     box-shadow: 0 0 2px var(--btn), 0 0 4px var(--btn), 0 0 8px var(--btn),
       0 0 20px var(--btn);
+      transition: .3s ease;
   }
   /***************** RESPONSIVE ******************/
   @media screen and (max-width: 912px){
@@ -536,11 +541,15 @@
   #gradient-4 .container .row .imagePortfolio img{
     display: flex;
     width: 20rem!important;
-    height: 15rem;
+    height: 10rem!important;
     }
   }
   @media screen and (max-width: 540px){
-   
+    #gradient-4 .container .row .imagePortfolio img{
+      display: flex;
+      width: 20rem!important;
+      height: 14rem!important;
+      }
 } 
   @media screen and (max-width: 450px) {
     .CV {
