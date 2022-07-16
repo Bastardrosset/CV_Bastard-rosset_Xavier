@@ -121,7 +121,8 @@
   .line:before,
   #line-2:before,
   #line-3:before,
-  #line-4:before {
+  #line-4:before,
+  #line-5:before {
     margin-top: 4rem;
     margin-left: 25%;
     background: #292e49e7;
@@ -131,7 +132,8 @@
   .line::after,
   #line-2::after,
   #line-3::after,
-  #line-4::after {
+  #line-4::after,
+  #line-5::after {
     content: " ";
     position: absolute;
     margin-top: 2rem;
@@ -374,6 +376,23 @@
   }
   
   /*********** CAROUSSEL RECOMMANDATIONS ************/
+  #line-5::after{
+    transform: translateX(0) scaleX(0);
+    animation-duration: 3s;
+    animation-delay: 10s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: linerecommandations;
+  }
+  @keyframes linerecommandations{
+    0% {
+      transform: scaleX(0);
+    }
+  
+    100% {
+      transform: scaleX(1);
+    }
+  }
   .Recomandations {
     color: #292e49;
     padding-bottom: 5rem;
@@ -415,12 +434,6 @@
   #message {
     resize: none;
     height: 10rem;
-  }
-  .comment {
-    font-style: italic;
-    font-size: 1.1rem;
-    height: 2.5rem;
-    color: rgba(137, 43, 226, 0.76);
   }
   #contact-form input[type="submit"] {
     margin: 4rem auto 0rem;
