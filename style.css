@@ -69,7 +69,7 @@ img {
   padding: 5rem 0 9rem 0;
   background-size: cover;
   background: linear-gradient(220deg, #bbd2c5cc, #5369764f, #292e49e7),
-    url(/assets/chemin.jpg)no-repeat center/cover;
+    src("/assets/chemin.jpg")no-repeat center/cover;
   clip-path: polygon(0 0, 100% 0%, 100% 69%, 0 100%);
 }
 
